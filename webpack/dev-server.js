@@ -6,7 +6,10 @@ var config = require('./dev.config.js')('localhost', port);
 new WebpackDevServer(webpack(config), {
 	contentBase: './build',
 	historyApiFallback : true,
-	hot: true
+	hot: true,
+	stats: {
+    colors: true
+  }
 }).listen(port, '0.0.0.0', function (err, result) {
 	if (err) {
 		console.log(err);

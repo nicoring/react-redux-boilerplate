@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import ActionCreators from './actionCreators'
 import store from '../store'
 
